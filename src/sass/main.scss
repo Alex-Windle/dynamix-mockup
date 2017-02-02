@@ -1,0 +1,39 @@
+/* ----------------- Page ------------------ */ 
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	background-color: #F3F3F3;
+	display: flex;
+	flex-direction: row;
+}
+/* ----------------- Left Panel ------------------- */ 
+.left-panel{
+	width: 33%;
+}
+
+figure{
+	background-color: #313131;
+	color: #EBEBEB;
+}
+
+img{
+	width: 100%;
+}
+
+.right-panel{
+	width: 66%;
+}
+
+/* ----------------- Right Panel ------------------- */ 
+/* ----------------- Color References ------------------- 
+Whole Page
+Background: 	#F3F3F3
+
+Photo
+Background: 	#313131
+Caption: 		#EBEBEB
+*/ 
+
