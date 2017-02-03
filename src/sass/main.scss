@@ -3,6 +3,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	line-height: 100%;
 }
 
 .container{
@@ -11,79 +12,133 @@
 	flex-direction: row;
 }
 
+.left-panel, .right-panel{
+	margin-top: 75px;
+	margin-bottom: 75px;
+}
 /* ----------------- Left Panel ------------------- */ 
 
 .left-panel{
-	width: 33%;
+	width: 37%;
+	margin-left: 20px;
+	margin-right: 10px;
+}
+
+#figure-wrapper{
+	width: 97%;
 }
 
 figure{
 	background-color: #313131;
 	color: #EBEBEB;
+	margin-top: 0;
 }
 
 img{
 	width: 100%;
 }
 
+figcaption{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+}
+
+figcaption p{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	font-size: .825em;
+	letter-spacing: .2px;
+	line-height: 210%;
+}
+figcaption p span{
+	font-weight: 400; 
+}
+figcaption p .fa{
+	padding: 5px;
+	font-size: 1.5em;
+	margin-right: 8px;
+}
+
+figcaption p .fa-phone{
+	padding-right: 10px;
+}
+
 /* ----------------- Right Panel ------------------- */ 
 
 .right-panel{
-	width: 66%;
+	width: 63%;
+	margin-right: 75px;
 }
 
 h1{
 	font-family: Poppins, sans-serif;
+	font-size: 3.1em;
 	color: #023853;
-	margin: 0;
+	margin: 0 0 12px 0;
+	letter-spacing: 5px;
 }
 
 h4{
-	font-family: Poppins, sans-serif;
+	font-family: 'Lato', sans-serif;
+	font-size: .95em;
 	color: #ACABAB;
+	letter-spacing: 2px;
+	margin: 0 0 20px 0;
 }
 
 #divider{
-	border-top: 1.5px solid #008ECF;
+	border-top: 2px solid #D0DBE9;
 	width: 100%;
+	margin: 0 0 18px 0;
 }
 
 #divider-bar{
-	border-top: 7px solid #008ECF;
-	width: 10%;
-	margin-top: -3.5px;
+	border-top: 8px solid #008ECF;
+	width: 14%;
+	margin-top: -4px;
 	margin-left: 3%;
 }
 
 section p{
-	font-family: "Source Sans Pro", sans-serif;
-    letter-spacing: 1px;
-    font-weight: lighter;
-    color: #313131;
+	font-family: 'Catamaran', sans-serif;	
+    letter-spacing: 1.35px;
+    font-size: 1.01em;
+    color: #616161;
+    line-height: 149%;
 }
 
 section blockquote{
-	font-size: 2em;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-size: 2.02em;
 	font-style: italic;
+	font-weight: 500;
+	line-height: 130%;
 	color: #008ECF; 
 	margin: 30px auto;
-	letter-spacing: 3px;
+	letter-spacing: 3.9px;
 	width: 90%;
 }
 
 /* ----------------- Color References ------------------- 
+
 Whole Page
+
 Background: 	#F3F3F3
 
 Left Panel
+
 Background: 	#313131
 Caption: 		#EBEBEB
 
 Right Panel
+
 Title: 			#023853
 Subtitle: 		#ACABAB
-Divider: 		#008ECF
-Text: 			#313131
+Divider line:   #D0DBE9
+Divider bar: 	#008ECF
+Text: 			#313131 or #616161
 Blockquote: 	#008ECF
+
 */ 
 
