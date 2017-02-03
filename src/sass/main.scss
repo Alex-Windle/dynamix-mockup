@@ -128,3 +128,48 @@ figure{
 		}
 	}
 }
+
+/* ------------- Responsive for mobile -------------- */ 
+
+@media (max-width: 415px){
+	.container{
+		flex-direction: column; 
+		.left-panel, .right-panel{
+			margin-top: 15px;
+			margin-bottom: 0px;
+		}
+	}
+	.left-panel{
+		width: 100%;
+		margin: 0;
+		#figure-wrapper{
+			margin: 0 auto;
+		}
+		figure figcaption p{
+			font-size: .5em;
+		}
+	}
+	.right-panel{
+		width: 90%;
+		margin: 0 auto; 
+		h1{
+			font-size: 1.5em;
+		}
+		h4{
+			font-size: .5em;
+		}
+		section{
+			p{
+				font-size: .75em;
+			    letter-spacing: .3px; 
+			}
+			blockquote{	
+				font-size: .9em;
+				letter-spacing: 1.5px;
+			}
+		}
+	}
+}
+
+/* ------------- Responsive for tablet -------------- */ 
+
