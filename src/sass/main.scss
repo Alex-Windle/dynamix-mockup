@@ -1,67 +1,62 @@
-/* ----------------- Page ------------------ */ 
+/* ----------------- Whole Page ------------------ */ 
 
 *{
 	margin: 0;
 	padding: 0;
 	line-height: 100%;
+	.container{
+		background-color: #F3F3F3;
+		display: flex;
+		flex-direction: row;
+		.left-panel, .right-panel{
+			margin-top: 75px;
+			margin-bottom: 75px;
+		}
+	}
 }
 
-.container{
-	background-color: #F3F3F3;
-	display: flex;
-	flex-direction: row;
-}
-
-.left-panel, .right-panel{
-	margin-top: 75px;
-	margin-bottom: 75px;
-}
 /* ----------------- Left Panel ------------------- */ 
 
 .left-panel{
 	width: 37%;
 	margin-left: 20px;
 	margin-right: 10px;
-}
+	#figure-wrapper{
+		width: 97%;
 
-#figure-wrapper{
-	width: 97%;
+	}
 }
 
 figure{
+	margin-top: 0;
 	background-color: #313131;
 	color: #EBEBEB;
-	margin-top: 0;
-}
-
-img{
-	width: 100%;
-}
-
-figcaption{
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 15px;
-}
-
-figcaption p{
-	font-family: 'Roboto', sans-serif;
-	font-weight: 300;
-	font-size: .825em;
-	letter-spacing: .2px;
-	line-height: 210%;
-}
-figcaption p span{
-	font-weight: 400; 
-}
-figcaption p .fa{
-	padding: 5px;
-	font-size: 1.5em;
-	margin-right: 8px;
-}
-
-figcaption p .fa-phone{
-	padding-right: 10px;
+	img{
+		width: 100%;
+	}
+	figcaption{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 15px;
+		p{
+			font-family: 'Roboto', sans-serif;
+			font-size: .825em;
+			font-weight: 300;
+			letter-spacing: .2px;
+			line-height: 210%;
+			span{
+				font-weight: 400; 
+			}
+			.fa{
+				padding: 5px;
+				font-size: 1.5em;
+				margin-right: 8px;
+			}
+			.fa-phone{
+				padding-right: 10px;
+			}
+		}
+	}
 }
 
 /* ----------------- Right Panel ------------------- */ 
@@ -69,55 +64,51 @@ figcaption p .fa-phone{
 .right-panel{
 	width: 63%;
 	margin-right: 75px;
-}
-
-h1{
-	font-family: Poppins, sans-serif;
-	font-size: 3.1em;
-	color: #023853;
-	margin: 0 0 12px 0;
-	letter-spacing: 5px;
-}
-
-h4{
-	font-family: 'Lato', sans-serif;
-	font-size: .95em;
-	color: #ACABAB;
-	letter-spacing: 2px;
-	margin: 0 0 20px 0;
-}
-
-#divider{
-	border-top: 2px solid #D0DBE9;
-	width: 100%;
-	margin: 0 0 18px 0;
-}
-
-#divider-bar{
-	border-top: 8px solid #008ECF;
-	width: 14%;
-	margin-top: -4px;
-	margin-left: 3%;
-}
-
-section p{
-	font-family: 'Catamaran', sans-serif;	
-    letter-spacing: 1.35px;
-    font-size: 1.01em;
-    color: #616161;
-    line-height: 149%;
-}
-
-section blockquote{
-	font-family: 'Cabin Condensed', sans-serif;
-	font-size: 2.02em;
-	font-style: italic;
-	font-weight: 500;
-	line-height: 130%;
-	color: #008ECF; 
-	margin: 30px auto;
-	letter-spacing: 3.9px;
-	width: 90%;
+	h1{
+		color: #023853;
+		margin: 0 0 12px 0;
+		font-family: Poppins, sans-serif;
+		font-size: 3.1em;
+		letter-spacing: 5px;
+	}
+	h4{
+		color: #ACABAB;
+		margin: 0 0 20px 0;
+		font-family: 'Lato', sans-serif;
+		font-size: .95em;	
+		letter-spacing: 2px;
+	}
+	#divider{
+		border-top: 2px solid #D0DBE9;
+		width: 100%;
+		margin: 0 0 18px 0;
+		#divider-bar{
+			border-top: 8px solid #008ECF;
+			width: 14%;
+			margin-top: -4px;
+			margin-left: 3%;
+		}
+	}
+	section{
+		p{
+		    color: #616161;
+			font-family: 'Catamaran', sans-serif;	
+			font-size: 1.01em;
+		    letter-spacing: 1.35px;    
+		    line-height: 149%;
+		}
+		blockquote{	
+			width: 90%;
+			margin: 30px auto;
+			color: #008ECF; 
+			font-family: 'Cabin Condensed', sans-serif;
+			font-size: 2.02em;
+			font-style: italic;
+			font-weight: 500;
+			letter-spacing: 3.9px;
+			line-height: 130%;
+		}
+	}
 }
 
 /* ----------------- Color References ------------------- 
@@ -137,7 +128,7 @@ Title: 			#023853
 Subtitle: 		#ACABAB
 Divider line:   #D0DBE9
 Divider bar: 	#008ECF
-Text: 			#313131 or #616161
+Text: 			#616161
 Blockquote: 	#008ECF
 
 */ 
